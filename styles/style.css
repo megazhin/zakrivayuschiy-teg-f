@@ -19,6 +19,8 @@
   min-block-size: 100dvb;
   font-family: var(--page-main-font-family, 'Inter', sans-serif);
   font-variation-settings: 'wght' var(--page-main-font-weight, 465);
-  background-color: var(--background-color, #000);
   color: var(--accent-color, #00CC14);
+  background-color: var(--background-color, #000);
+  background-image: var(--page-background-image);
+  background-size: cover;
 }

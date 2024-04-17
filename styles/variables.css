@@ -1,8 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --page-main-font-family: 'Inter', sans-serif;
-    --page-accent-font-family: 'PressStart2P';
-    --page-main-font-weight: 465;
-    --accent-color: #00CC14;
-    --background-color: #000;
+  --page-main-font-family: 'Inter', sans-serif;
+  --page-accent-font-family: 'PressStart2P';
+  --page-main-font-weight: 465;
+  --accent-color: #00CC14;
+  --background-color: #000;
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #000000 0 2px,
+      #00000000 2px 4px),
+    repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
 }
