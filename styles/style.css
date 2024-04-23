@@ -234,6 +234,15 @@
   transform: scaleX(1);
 }
 
+.button__save {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 20px;
+}
+
 .button__text,
 .button__icon {
   color: var(--button-text-color);
@@ -241,12 +250,12 @@
 }
 
 .button__icon {
-  block-size: 22px;
-  inline-size: 22px;
+  block-size: 21px;
+  inline-size: 21px;
 }
 
 .like-icon {
-  block-size: 36px;
+  block-size: 39px;
   inline-size: 39px;
 }
 
@@ -314,6 +323,21 @@
 
 .filter__multiple {
   filter: hue-rotate(90deg) opacity(25%) saturate(30%);
+}
+
+@media (width <= 375px) {
+  .modal {
+    max-inline-size: 341px;
+  }
+
+  .button__save {
+    flex-direction: column;
+  }
+
+  .button__icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {
