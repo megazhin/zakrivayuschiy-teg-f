@@ -176,11 +176,12 @@
   display: flex;
   justify-content: end;
   padding: 25px;
+  gap: 5px;
 }
 
 .card__icon-button {
   display: grid;
-  border: none;
+  border: 2px solid transparent;
   background: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
@@ -222,7 +223,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--accent-color, #000000);
+  background: var(--accent-color);
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
@@ -255,7 +256,7 @@
 }
 
 .like-icon {
-  block-size: 39px;
+  block-size: 36px;
   inline-size: 39px;
 }
 
