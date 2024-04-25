@@ -23,6 +23,7 @@
   background-color: var(--background-color, #000);
   background-image: var(--page-background-image);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -43,6 +44,10 @@
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header__title:focus {
+  outline: none;
 }
 
 .header__subtitle {
@@ -126,15 +131,12 @@
   background-color: var(--background-color);
 }
 
-.card__header {
+.card__title {
   border-block-end: 2px solid var(--accent-color);
   padding: 3px 24px 3px 10px;
-}
-
-.card__title {
   font-size: 18px;
   line-height: 21.78px;
-  font-variation-settings: 'wght' 785;
+  font-variation-settings: 'wght' var(--card-header-font-weight);
 }
 
 .card__image {
@@ -152,8 +154,8 @@
   line-height: 14px;
   text-transform: uppercase;
   text-shadow: 0 0 1px var(--text-stroke-color);
-  inset-inline-end: 13px;
-  inset-block-start: 24px;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
 }
 
 .card-img {
@@ -181,6 +183,7 @@
 
 .card__icon-button {
   display: grid;
+  padding: 0;
   border: 2px solid transparent;
   background: transparent;
   transition: border-color 0.3s ease;
@@ -200,7 +203,6 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--accent-color);
-  padding: 10px 36px;
   font-family: var(--page-accent-font-family);
   font-size: 14px;
   text-transform: inherit;
@@ -233,6 +235,10 @@
 
 .button:hover::before {
   transform: scaleX(1);
+}
+
+.card__like-button {
+  width: 130px;
 }
 
 .button__save {
@@ -286,6 +292,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  font-size: 14px;
 }
 
 .modal__icon {
@@ -295,6 +302,7 @@
 }
 
 .modal__button {
+  block-size: 38px;
   inline-size: 100%;
 }
 
@@ -338,6 +346,10 @@
   .button__icon {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .card__image-text {
+    inset-inline-end: 13px;
   }
 }
 

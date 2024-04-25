@@ -6,6 +6,7 @@
 */
 :root.theme-dark {
   --page-main-font-weight: 465;
+  --card-header-font-weight: 785;
   --accent-color: #00CC14;
   --text-stroke-color: #000;
   --button-text-color: #00CC14;
@@ -20,6 +21,7 @@
 
 :root.theme-light {
   --page-main-font-weight: 400;
+  --card-header-font-weight: 700;
   --accent-color: #000;
   --text-stroke-color: #fff;
   --button-text-color: #fff;
@@ -35,6 +37,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --page-main-font-weight: 400;
+    --card-header-font-weight: 700;
     --accent-color: #000;
     --text-stroke-color: #fff;
     --button-text-color: #fff;
