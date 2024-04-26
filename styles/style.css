@@ -177,7 +177,8 @@
 .card__footer {
   display: flex;
   justify-content: end;
-  padding: 25px;
+  padding-inline: 25px;
+  padding-block-end: 25px;
   gap: 5px;
 }
 
