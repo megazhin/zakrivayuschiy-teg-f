@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--page-main-font-family, 'Inter', sans-serif);
-  font-variation-settings: 'wght' var(--page-main-font-weight, 465);
+  font-variation-settings: 'wght' var(--page-main-font-weight);
   color: var(--accent-color, #00CC14);
   background-color: var(--background-color, #000);
   background-image: var(--page-background-image);
@@ -33,7 +33,7 @@
   max-inline-size: 696px;
   margin-inline: auto;
   margin-block-start: 100px;
-  margin-block-end: 102px;
+  margin-block-end: 100px;
   font-family: var(--page-accent-font-family);
   text-transform: uppercase;
   background-color: var(--background-color);
@@ -132,6 +132,7 @@
 }
 
 .card__title {
+  min-block-size: 33px;
   border-block-end: 2px solid var(--accent-color);
   padding: 3px 24px 3px 10px;
   font-size: 18px;
@@ -201,6 +202,7 @@
 }
 
 .button {
+  padding: 0;
   position: relative;
   z-index: 1;
   border: 2px solid var(--accent-color);
@@ -351,6 +353,18 @@
 
   .card__image-text {
     inset-inline-end: 13px;
+  }
+
+  .cards-list {
+    gap: 50px;
+  }
+
+  .card__title {
+    padding: 3.5px 10px 5.5px;
+  }
+
+  .card__content {
+    gap: 25px;
   }
 }
 
